@@ -11,7 +11,7 @@ To run the client, use the command "gradlew run -Dexec.mainClass=ChatClient.cont
 
 <b>Chat bubbles</b>
 - Chat bubbles are animated as they are added to the text area.
-- Chat bubbles are given randomly generated color.
+- Users are assigned color for their chat bubbles by server.
 
 <b>Multithreading</b>
 - Clients are each given their own server thread when connected.
@@ -25,9 +25,13 @@ To run the client, use the command "gradlew run -Dexec.mainClass=ChatClient.cont
 - Messages are sent by JSON which include sender information and message data.
 - Messages have a type attribute which flags how they should be handled by the receiver.
 
+<b>Users</b>
+
+
 
 <b>To Come:</b>
 - Integrating the user database and login functions from FancyFX to allow user data persistence.
+- Static Color pool which server manages to prevent unwanted/duplicate colors.
 - Initial screen which allows selection between running server/client.
 - Design changes.
 
