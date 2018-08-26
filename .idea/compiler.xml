@@ -2,7 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
-      <module name="ChatRoomApp_main" target="1.10" />
+      <module name="ChatRoomApp_main" target="1.8" />
       <module name="ChatRoomApp_test" target="1.10" />
     </bytecodeTargetLevel>
   </component>
