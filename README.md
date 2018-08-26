@@ -25,9 +25,6 @@ To run the client, use the command "gradlew run -Dexec.mainClass=ChatClient.cont
 - Messages are sent by JSON which include sender information and message data.
 - Messages have a type attribute which flags how they should be handled by the receiver.
 
-<b>Users</b>
-
-
 
 <b>To Come:</b>
 - Integrating the user database and login functions from FancyFX to allow user data persistence.
