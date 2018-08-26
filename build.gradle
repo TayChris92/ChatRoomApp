@@ -3,7 +3,7 @@ apply plugin: 'idea'
 apply plugin: 'application'
 
 version = '1.0'
-mainClassName = "ChatServer.controller.ServerMain"
+mainClassName = System.getProperty("exec.mainClass") ?: "ChatServer.controller.ServerMain"
 
 repositories {
     mavenCentral()
