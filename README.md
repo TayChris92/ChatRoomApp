@@ -14,12 +14,12 @@ Chat bubbles
 - Chat bubbles are given randomly generated color.
 
 Multithreading
-Clients are given their own server thread when connected.
-Server provides functions which allow for broadcasting of client data including:
-  Client List
-  Messages
-  Admin commands
-When terminating, clients send a farewell message to the server to signal proper sendoff.
+-Clients are given their own server thread when connected.
+-Server provides functions which allow for broadcasting of client data including:
+  -Client List
+  -Messages
+  -Admin commands
+-When terminating, clients send a farewell message to the server to signal proper sendoff.
 
 Messaging
 - Messages are sent by JSON which include sender information and message data.
