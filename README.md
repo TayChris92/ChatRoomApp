@@ -30,3 +30,9 @@ To run the client, use the command "gradlew run -Dexec.mainClass=ChatClient.cont
 - Integrating the user database and login functions from FancyFX to allow user data persistence.
 - Initial screen which allows selection between running server/client.
 - Design changes.
+
+Uses:
+com.jfoenix:jfoenix:8.0.72
+org.json:json:201801302
+org.xerial:sqlite-jdbc:3.23.12
+
