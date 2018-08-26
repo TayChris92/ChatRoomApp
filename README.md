@@ -33,7 +33,7 @@ To run the client, use the command "gradlew run -Dexec.mainClass=ChatClient.cont
 - Design changes.
 
 Uses:
-com.jfoenix:jfoenix:8.0.72
-org.json:json:201801302
+com.jfoenix:jfoenix:8.0.72<br>
+org.json:json:201801302<br>
 org.xerial:sqlite-jdbc:3.23.12
 
