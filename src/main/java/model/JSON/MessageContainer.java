@@ -10,9 +10,6 @@ import org.json.JSONObject;
 
 import java.awt.*;
 
-enum MessageDirection{
-    SEND,RECEIVE
-}
 public class MessageContainer extends HBox {
 
     private TextField text;
@@ -24,8 +21,7 @@ public class MessageContainer extends HBox {
     private Text timeStamp = new Text();
 
     public MessageContainer(Color color){
-
-
+        
     }
 
     public MessageContainer(JSONObject messageCardJSON) {
