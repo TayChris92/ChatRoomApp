@@ -1,5 +1,6 @@
-package model;
+package model.Caches;
 
+import ChatClient.controller.ClientController;
 import ChatServer.controller.ServerController;
 import ChatServer.controller.ServerDaemon;
 
@@ -10,6 +11,7 @@ public class ControllerBox implements ControllerBoxInterface{
 
     public static ServerController serverController;
     public static List<ServerDaemon> clientList = new ArrayList<ServerDaemon>();
+    public static ClientController clientController;
 
     private ControllerBox(){
 
@@ -18,6 +20,11 @@ public class ControllerBox implements ControllerBoxInterface{
     @Override
     public void registerServerController(ServerController serverController){
         this.serverController = serverController;
+    }
+
+    @Override
+    public void registerClientController(ClientController clientController){
+        this.clientController = clientController;
     }
 
     public void registerClientList(List<ServerDaemon> clientList){

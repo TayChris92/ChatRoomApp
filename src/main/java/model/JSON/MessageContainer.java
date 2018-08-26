@@ -1,5 +1,4 @@
-package model;
-import model.MessageCard;
+package model.JSON;
 import ChatClient.controller.Client;
 import ChatServer.controller.ServerDaemon;
 import javafx.geometry.Pos;
@@ -20,7 +19,7 @@ public class MessageContainer extends HBox {
     private Text prefix = new Text();
     private Text message = new Text();
     private TextFlow textFlow;
-    private model.MessageCard card;
+    private MessageCard card;
     private JSONObject messageCardJSON;
     private Text timeStamp = new Text();
 
@@ -65,7 +64,7 @@ public class MessageContainer extends HBox {
         Color color = new Color(Integer.parseInt(messageCardJSON.getString("color")));
         String hexColor = String.format("#%06X", (0xFFFFFF & color.getRGB()));
 
-        textFlow.getStylesheets().add(ClassLoader.getSystemResource("ChatRoom/view/textflow.css").toExternalForm());
+        textFlow.getStylesheets().add(ClassLoader.getSystemResource("ChatRoom/view/css/textflow.css").toExternalForm());
         textFlow.setStyle("-fx-background-color: " + hexColor);
         super.getChildren().add(textFlow);
 

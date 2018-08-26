@@ -1,16 +1,16 @@
 package ChatClient.controller;
 
-import model.JSONMessageCard;
-import model.MessageContainer;
 import javafx.animation.FadeTransition;
 import javafx.animation.ParallelTransition;
 import javafx.animation.TranslateTransition;
 import javafx.application.Platform;
 import javafx.util.Duration;
+import model.Caches.ControllerBox;
+import model.JSON.JSONMessageCard;
+import model.JSON.MessageContainer;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import ChatClient.model.ControllerBox;
 import java.awt.*;
 import java.io.EOFException;
 import java.io.IOException;

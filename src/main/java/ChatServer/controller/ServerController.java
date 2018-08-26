@@ -5,9 +5,6 @@
  */
 package ChatServer.controller;
 
-import model.ControllerBox;
-import model.JSONMessageCard;
-import model.MessageContainer;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXDrawer;
 import javafx.animation.FadeTransition;
@@ -20,6 +17,9 @@ import javafx.scene.input.ScrollEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.util.Duration;
+import model.Caches.ControllerBox;
+import model.JSON.JSONMessageCard;
+import model.JSON.MessageContainer;
 import org.json.JSONObject;
 
 /**
@@ -68,15 +68,6 @@ public class ServerController {
 
     @FXML
     private void initialize(){
-
-
-
-        /*listUsers.getItems().addAll("User1","User2", "User3");
-        listUsers.setVisible(false);
-        vboxMenu.setStyle("-fx-effect: dropshadow( gaussian, rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 )");
-        */
-
-
 
 
         buttonShowMenu.setOnAction(event -> {

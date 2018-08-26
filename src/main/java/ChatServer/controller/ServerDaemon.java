@@ -5,14 +5,15 @@
  */
 package ChatServer.controller;
 
-import model.ControllerBox;
-import model.JSONMessageCard;
-import model.MessageContainer;
 import javafx.animation.FadeTransition;
 import javafx.animation.ParallelTransition;
 import javafx.animation.TranslateTransition;
 import javafx.application.Platform;
 import javafx.util.Duration;
+import model.Caches.ControllerBox;
+import model.JSON.JSONMessageCard;
+import model.JSON.MessageContainer;
+import model.Util.UtilFunct;
 import org.json.JSONObject;
 
 import java.awt.*;
@@ -165,7 +166,6 @@ public class ServerDaemon extends Thread{
         Platform.runLater(new Runnable() {
             @Override
             public void run() {
-                //ControllerBox.serverController.adminText.setText("Connected to: " + connection.getInetAddress().getHostAddress());
                 ControllerBox.serverController.textMessageBar.setDisable(false);
                 ControllerBox.serverController.buttonSend.setDisable(false);
             }
@@ -191,7 +191,8 @@ public class ServerDaemon extends Thread{
 
     public void clientOnBoard(){
 
-        color = mainServer.generateColor();
+        UtilFunct utilDaemon = new UtilFunct();
+        color = utilDaemon.generateColor();
 
         JSONObject clientOnBoard = new JSONMessageCard().onboardingMessage(mainServer);
         sendMessage(clientOnBoard);

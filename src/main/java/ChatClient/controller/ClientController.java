@@ -17,7 +17,7 @@ public class ClientController {
 
     @FXML
     public JFXButton buttonSend;
-    private MainClientController mainClientController;
+    private ClientMain clientMain;
     public Client clientHandler = new Client("localhost");
     private String userID;
     private String message;
@@ -74,8 +74,8 @@ public class ClientController {
         });
     }
 
-    public void SetMainClientController(MainClientController mainClientController){
-        this.mainClientController = mainClientController;
+    public void SetMainClientController(ClientMain clientMain){
+        this.clientMain = clientMain;
     }
 
     public void StartClient(){

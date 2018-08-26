@@ -1,8 +1,10 @@
-package model;
+package model.Test;
 
-public class JsonTest {
+import model.JSON.JSONMessageCard;
 
-    public JsonTest(){
+public class TestClass {
+
+    public TestClass(){
 
     }
 

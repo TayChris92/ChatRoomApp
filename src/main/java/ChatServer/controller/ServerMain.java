@@ -1,7 +1,5 @@
 package ChatServer.controller;
 
-import model.ControllerBox;
-import model.JSONMessageCard;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
@@ -9,6 +7,8 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import model.Caches.ControllerBox;
+import model.JSON.JSONMessageCard;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -41,7 +41,7 @@ public class ServerMain extends Application{
             this.primaryStage = primaryStage;
             primaryStage.setTitle("Chat Room SERVER");
             showChatWindow();
-            //generateColor();
+
 
 
 
@@ -74,7 +74,7 @@ public class ServerMain extends Application{
             try {
 
                 FXMLLoader loader = new FXMLLoader();
-                loader.setLocation(ClassLoader.getSystemResource("ChatRoom/view/ChatRoomTest.fxml"));
+                loader.setLocation(ClassLoader.getSystemResource("ChatRoom/view/fxml/ChatRoomTest.fxml"));
 
                 serverController = new ServerController();
                 loader.setController(serverController);
@@ -192,18 +192,7 @@ public class ServerMain extends Application{
         }
     }
 
-    public Color generateColor(){
 
-        Random rand = new Random();
-
-        float r = rand.nextFloat() / 2f + 0.5f;
-        float g = rand.nextFloat() / 2f + 0.5f;
-        float b = rand.nextFloat() / 2f + 0.5f;
-
-        Color color = new Color(r,g,b);
-
-        return color;
-        }
 
         public JSONArray getClientList(){
 
