@@ -1,6 +1,6 @@
 # ChatRoomApp
 
-Requires Java 8 runtime.
+Requires Java 8 runtime or higher.
 Currently only works on localhost.
 
 To run, open a command prompt at project root and use the command "-gradlew run" to launch the server by default.
