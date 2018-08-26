@@ -19,7 +19,7 @@ To run the client, use the command "gradlew run -Dexec.mainClass=ChatClient.cont
   - Client List
   - Messages
   - Admin commands
- -When terminating, clients send a farewell message to the server to signal proper sendoff.
+ - When terminating, clients send a farewell message to the server to signal proper sendoff.
 
 <b>Messaging</b>
 - Messages are sent by JSON which include sender information and message data.
