@@ -14,7 +14,7 @@ To run the client, use the command "gradlew run -Dexec.mainClass=ChatClient.cont
 - Chat bubbles are given randomly generated color.
 
 <b>Multithreading</b>
-- Clients are given their own server thread when connected.
+- Clients are each given their own server thread when connected.
 - Server provides functions which allow for broadcasting of client data including:
   - Client List
   - Messages
