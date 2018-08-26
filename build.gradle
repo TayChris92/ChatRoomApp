@@ -1,0 +1,28 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'application'
+
+version = '1.0'
+mainClassName = "ChatServer.controller.ServerMain"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies{
+    compile group:'org.xerial', name:'sqlite-jdbc', version:'3.23.1'
+    compile group:'com.jfoenix', name:'jfoenix', version:'9.0.5'
+    compile group: 'org.json', name: 'json', version: '20180130'
+}
+
+//create a single Jar with all dependencies
+task fatJar(type: Jar) {
+    manifest {
+        attributes 'ChatRoomApp': 'ChatRoomApp',
+                'Implementation-Version': version,
+                'Main-Class': 'ChatServer.controller.ServerMain'
+    }
+    baseName = project.name + '-all'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}

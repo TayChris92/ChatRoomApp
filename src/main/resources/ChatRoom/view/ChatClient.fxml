@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #64c1ff;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ChatRoom.ChatClient.controller.ClientController">
+   <children>
+      <TextArea fx:id="textArea" editable="false" layoutX="35.0" layoutY="20.0" prefHeight="287.0" prefWidth="522.0" />
+      <TextField fx:id="textMessageBar" layoutX="35.0" layoutY="331.0" prefHeight="25.0" prefWidth="421.0" />
+      <JFXButton fx:id="buttonSend" buttonType="RAISED" layoutX="514.0" layoutY="331.0" style="-fx-background-color: #64c1ff;" text="Send" />
+   </children>
+</AnchorPane>

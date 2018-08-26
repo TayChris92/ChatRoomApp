@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #64c1ff;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ChatRoom.ChatClient.controller.ClientController">
+   <children>
+      <TextField fx:id="textMessageBar" layoutX="35.0" layoutY="331.0" prefHeight="25.0" prefWidth="421.0" />
+      <JFXButton fx:id="buttonSend" buttonType="RAISED" layoutX="514.0" layoutY="331.0" style="-fx-background-color: #64c1ff;" text="Send" />
+      <VBox layoutX="20.0" layoutY="14.0" prefHeight="298.0" prefWidth="565.0">
+         <children>
+            <HBox fx:id="adminBanner" alignment="CENTER" prefHeight="21.0" prefWidth="523.0" style="-fx-background-color: #e0e0e0;">
+               <children>
+                  <Label fx:id="adminText" text="Admin Text" />
+               </children>
+            </HBox>
+            <ScrollPane fx:id="chatScroll" hbarPolicy="NEVER" prefHeight="280.0" prefWidth="545.0" vbarPolicy="NEVER">
+               <content>
+                  <VBox fx:id="chatPane" prefHeight="280.0" prefWidth="565.0" spacing="10.0" style="-fx-background-color: white;">
+                     <padding>
+                        <Insets left="20.0" right="20.0" top="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
