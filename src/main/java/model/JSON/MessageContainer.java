@@ -21,7 +21,7 @@ public class MessageContainer extends HBox {
     private Text timeStamp = new Text();
 
     public MessageContainer(Color color){
-        
+
     }
 
     public MessageContainer(JSONObject messageCardJSON) {
