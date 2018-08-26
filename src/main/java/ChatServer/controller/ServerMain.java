@@ -130,7 +130,7 @@ public class ServerMain extends Application{
             clientList.add(serverDaemon);
             serverDaemon.start();
             //clientOnBoard(serverDaemon);
-            System.out.println("Client Onboarded");
+
 
 
 
@@ -201,7 +201,6 @@ public class ServerMain extends Application{
         float b = rand.nextFloat() / 2f + 0.5f;
 
         Color color = new Color(r,g,b);
-        System.out.println(color);
 
         return color;
         }

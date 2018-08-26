@@ -52,7 +52,6 @@ public class ServerDaemon extends Thread{
     private void CreateClientProfile(){
         try {
             String userCardString = (String) input.readObject();
-            System.out.println("UserCardString : " + userCardString);
             userCard = new JSONObject(userCardString);
         } catch (IOException e) {
             e.printStackTrace();
@@ -89,7 +88,7 @@ public class ServerDaemon extends Thread{
 
                 }else if(incomingCardJSON.get("type").toString().equals("group")){
 
-                    System.out.println("Received" + incomingCardJSON.toString(5));
+                    System.out.println("Received from " + incomingCardJSON.get("prefix") + "\n" + incomingCardJSON.toString(5));
 
                     messageDirection = "RECEIVE";
                     messageBox = new MessageContainer(incomingCardJSON).MessageContainerBuilder(messageDirection);
@@ -196,7 +195,6 @@ public class ServerDaemon extends Thread{
 
         JSONObject clientOnBoard = new JSONMessageCard().onboardingMessage(mainServer);
         sendMessage(clientOnBoard);
-        System.out.println("SENT ONBOARDING MESSAGE");
 
     }
 

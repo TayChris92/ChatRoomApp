@@ -69,10 +69,12 @@ public class JSONMessageCard extends JSONObject implements Serializable {
     public JSONObject onboardingMessage(ServerMain mainServer){
 
         JSONArray clientListArray = mainServer.getClientList();
+        prefix = mainServer.prefix;
 
         put("type", "onboarding");
         put("clients", clientListArray);
         put("color", String.valueOf(mainServer.generateColor().getRGB()));
+        put("prefix", prefix);
 
         return this;
     }

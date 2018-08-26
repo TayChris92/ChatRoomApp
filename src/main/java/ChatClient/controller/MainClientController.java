@@ -46,10 +46,6 @@ public class MainClientController extends Application {
 
             Scene scene = new Scene(root);
 
-            scene.addEventFilter(ScrollEvent.ANY, event -> {
-                System.out.println(event.getDeltaY());
-            });
-
             primaryStage.setScene(scene);
             primaryStage.show();
 

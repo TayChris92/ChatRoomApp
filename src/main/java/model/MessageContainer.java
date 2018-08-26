@@ -68,7 +68,6 @@ public class MessageContainer extends HBox {
         textFlow.getStylesheets().add(ClassLoader.getSystemResource("ChatRoom/view/textflow.css").toExternalForm());
         textFlow.setStyle("-fx-background-color: " + hexColor);
         super.getChildren().add(textFlow);
-        System.out.println("Color successfully added to messagebox");
 
         return this;
     }

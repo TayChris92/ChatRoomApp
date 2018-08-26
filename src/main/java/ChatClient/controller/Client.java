@@ -130,7 +130,7 @@ public class Client {
 
 
                 }else if(incomingCardJSON.get("type").equals("group")){
-                    System.out.println("Received" + incomingCardJSON.toString(5));
+                    System.out.println("Received from " + incomingCardJSON.getString("prefix") +  "\n" + incomingCardJSON.toString(5));
                     messageDirection = "RECEIVE";
                     messageBox = new MessageContainer(incomingCardJSON,this).MessageContainerBuilder(messageDirection);
 
@@ -149,15 +149,12 @@ public class Client {
                         }
                     });
                 }else if(incomingCardJSON.get("type").toString().equals("onboarding")){
-                    System.out.println(incomingCardString);
+                    System.out.println("Received from " + incomingCardJSON.getString("prefix") + "\n" + incomingCardJSON.toString(5));
                     int rgb = Integer.parseInt(incomingCardJSON.getString("color"));
-                    System.out.println(rgb);
                     color = new Color(rgb);
-                    System.out.println(color);
 
 
                 }
-                System.out.println("Received" + incomingCardJSON.toString(5));
 
                 }catch(ClassNotFoundException cnf){
                 }catch(SocketException se){
