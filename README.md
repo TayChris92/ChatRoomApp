@@ -9,7 +9,7 @@ To run the client, use the command "gradlew run -Dexec.mainClass=ChatClient.cont
 
 Currently Working:
 
-Chat bubbles
+<b>Chat bubbles</b>
 - Chat bubbles are animated as they are added to the text area.
 - Chat bubbles are given randomly generated color.
 
