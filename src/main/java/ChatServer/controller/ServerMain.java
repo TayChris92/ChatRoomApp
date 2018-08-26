@@ -17,7 +17,6 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
-import java.util.Random;
 
 public class ServerMain extends Application{
 
@@ -74,7 +73,7 @@ public class ServerMain extends Application{
             try {
 
                 FXMLLoader loader = new FXMLLoader();
-                loader.setLocation(ClassLoader.getSystemResource("ChatRoom/view/fxml/ChatRoomTest.fxml"));
+                loader.setLocation(ClassLoader.getSystemResource("ChatRoom/view/fxml/ChatWindow.fxml"));
 
                 serverController = new ServerController();
                 loader.setController(serverController);
@@ -130,6 +129,14 @@ public class ServerMain extends Application{
             clientList.add(serverDaemon);
             serverDaemon.start();
             //clientOnBoard(serverDaemon);
+
+            Platform.runLater(new Runnable() {
+                @Override
+                public void run() {
+                    serverController.textMessageBar.setDisable(false);
+                    serverController.buttonSend.setDisable(false);
+                }
+            });
 
 
 

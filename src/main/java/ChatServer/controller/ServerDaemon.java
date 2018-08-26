@@ -163,13 +163,7 @@ public class ServerDaemon extends Thread{
 
     @Override
     public void run(){
-        Platform.runLater(new Runnable() {
-            @Override
-            public void run() {
-                ControllerBox.serverController.textMessageBar.setDisable(false);
-                ControllerBox.serverController.buttonSend.setDisable(false);
-            }
-        });
+
 
         try {
             StreamSetup();

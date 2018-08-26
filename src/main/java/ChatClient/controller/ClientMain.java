@@ -31,7 +31,7 @@ public class ClientMain extends Application {
         try {
 
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(ClassLoader.getSystemResource("ChatRoom/view/fxml/ChatRoomTest.fxml"));
+            loader.setLocation(ClassLoader.getSystemResource("ChatRoom/view/fxml/ChatWindow.fxml"));
             clientController = new ClientController();
             loader.setController(clientController);
             AnchorPane root = loader.load();
