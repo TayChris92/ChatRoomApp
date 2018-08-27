@@ -164,7 +164,6 @@ public class ServerDaemon extends Thread{
     @Override
     public void run(){
 
-
         try {
             StreamSetup();
         } catch (IOException e) {
@@ -177,10 +176,6 @@ public class ServerDaemon extends Thread{
             e.printStackTrace();
         }
         CloseConnection();
-    }
-
-    public JSONObject getUserCard(){
-        return userCard;
     }
 
     public void clientOnBoard(){

@@ -41,9 +41,6 @@ public class ServerMain extends Application{
             primaryStage.setTitle("Chat Room SERVER");
             showChatWindow();
 
-
-
-
             Thread mainThread = new Thread(new Runnable() {
                 @Override
                 public void run() {
@@ -57,7 +54,6 @@ public class ServerMain extends Application{
                     }
                 }
             });
-
             mainThread.setDaemon(true);
             mainThread.start();
 
@@ -138,9 +134,6 @@ public class ServerMain extends Application{
                 }
             });
 
-
-
-
         }
 
     }
@@ -157,10 +150,6 @@ public class ServerMain extends Application{
         for(ServerDaemon e : clientList){
             e.sendMessage(messageCardJSON);
         }
-    }
-
-    public void addDaemon(ServerDaemon serverDaemon){
-        clientList.add(serverDaemon);
     }
 
     public void updateClientLists(){
