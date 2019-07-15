@@ -1,5 +1,9 @@
 # ChatRoomApp
 
+
+NOT WORKING until I can figure out dependency issues with JavaFX
+
+
 Requires Java 8 runtime or higher.
 Currently only works on localhost.
 
