@@ -30,9 +30,7 @@ public class ServerMain extends Application{
     public Color color = Color.decode("#a5d6a7");
 
 
-    public ServerMain(){
-
-    }
+    public ServerMain(){}
 
     @Override
     public void start(Stage primaryStage) throws IOException {
@@ -187,8 +185,6 @@ public class ServerMain extends Application{
             e.printStackTrace();
         }
     }
-
-
 
         public JSONArray getClientList(){
 
