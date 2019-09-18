@@ -30,9 +30,11 @@ Currently only works on localhost.
 - Messages are sent by JSON which include sender information and message data.
 - Messages have a type attribute which flags how they should be handled by the receiver.
 
+<b>Dependency Injection</b>
+- Weld managed Beans. I find it makes it a lot easier to access server and client thread contexts as well as updating the GUI.
 
 <b>To Come:</b>
-- Integrating the user database and login functions from FancyFX to allow user data persistence.
+- Integrating user database and login functions to allow user data persistence.
 - Static Color pool which server manages to prevent unwanted/duplicate colors.
 - Initial screen which allows selection between running server/client.
 - Design changes.
