@@ -13,6 +13,7 @@ Currently only works on localhost.
 <b>Currently Working:</b>
 
 <b>JSON Decoding</b>
+
 -Allows proper json to object mapping for sent and received messages.
 
 <b>Chat bubbles</b>
