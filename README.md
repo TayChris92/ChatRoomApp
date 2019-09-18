@@ -14,6 +14,7 @@ Currently only works on localhost.
 
 <b>JSON Decoding</b>
 -Allows proper json to object mapping for sent and received messages.
+
 <b>Chat bubbles</b>
 - Chat bubbles are animated as they are added to the text area.
 - Users are assigned color for their chat bubbles by server.
