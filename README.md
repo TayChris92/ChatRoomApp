@@ -43,5 +43,7 @@ Uses:
 <br>
 com.jfoenix:jfoenix:8.0.72<br>
 org.json:json:201801302<br>
-org.xerial:sqlite-jdbc:3.23.12
+org.xerial:sqlite-jdbc:3.23.12<br>
+com.fasterxml.jackson.core:jacksoncore:2.9.9<br>
+com.fasterxml.jackson.core:jackson-databind:2.9.8
 
