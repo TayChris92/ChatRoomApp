@@ -5,12 +5,14 @@ So far things are going really good.
 Both the server and client have a FXMain class which can be run through your IDE of choice.
 I'll add instructions for running from the command line later and then finally add some runnable jars to this repo.
 
+I'm not sure if I want to put both the server and client app into their own separate projects. My end goal is to start with a single interface which allows the user to choose if they want to host a server or connect to one. This main interface will be the entry point and will be the only class which extends Application so I don't have a bunch of Application threads running.
+
 Requires Java 8 runtime or higher.
 Currently only works on localhost.
 
 <b>Currently Working:</b>
 
-<b>JSON Decoding>
+<b>JSON Decoding</b>
 -Allows proper json to object mapping for sent and received messages.
 <b>Chat bubbles</b>
 - Chat bubbles are animated as they are added to the text area.
