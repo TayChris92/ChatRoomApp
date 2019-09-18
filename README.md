@@ -39,7 +39,7 @@ Currently only works on localhost.
 - Initial screen which allows selection between running server/client.
 - Design changes.
 
-Uses:
+Dependencies:
 <br>
 com.jfoenix:jfoenix:8.0.72<br>
 org.json:json:201801302<br>
