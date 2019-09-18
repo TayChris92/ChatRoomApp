@@ -1,18 +1,17 @@
 # ChatRoomApp
+Decided to revisit this to see how I could apply new things that I've learned and optimize the code.
+So far things are going really good.
 
-
-NOT WORKING until I can figure out dependency issues with JavaFX
-
+Both the server and client have a FXMain class which can be run through your IDE of choice.
+I'll add instructions for running from the command line later and then finally add some runnable jars to this repo.
 
 Requires Java 8 runtime or higher.
 Currently only works on localhost.
 
-To run, open a command prompt at project root and use the command "-gradlew run" to launch the server by default.
-
-To run the client, use the command "gradlew run -Dexec.mainClass=ChatClient.ClientMain"
-
 <b>Currently Working:</b>
 
+<b>JSON Decoding>
+-Allows proper json to object mapping for sent and received messages.
 <b>Chat bubbles</b>
 - Chat bubbles are animated as they are added to the text area.
 - Users are assigned color for their chat bubbles by server.
