@@ -9,7 +9,7 @@ Currently only works on localhost.
 
 To run, open a command prompt at project root and use the command "-gradlew run" to launch the server by default.
 
-To run the client, use the command "gradlew run -Dexec.mainClass=ChatClient.controller.ClientMain"
+To run the client, use the command "gradlew run -Dexec.mainClass=ChatClient.ClientMain"
 
 <b>Currently Working:</b>
 
