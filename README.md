@@ -1,17 +1,20 @@
 # ChatRoomApp
+Decided to revisit this to see how I could apply new things that I've learned and optimize the code.
+So far things are going really good.
 
+Both the server and client have a FXMain class which can be run through your IDE of choice.
+I'll add instructions for running from the command line later and then finally add some runnable jars to this repo.
 
-NOT WORKING until I can figure out dependency issues with JavaFX
-
+I'm not sure if I want to put both the server and client app into their own separate projects. My end goal is to start with a single interface which allows the user to choose if they want to host a server or connect to one. This main interface will be the entry point and will be the only class which extends Application so I don't have a bunch of Application threads running.
 
 Requires Java 8 runtime or higher.
 Currently only works on localhost.
 
-To run, open a command prompt at project root and use the command "-gradlew run" to launch the server by default.
-
-To run the client, use the command "gradlew run -Dexec.mainClass=ChatClient.ClientMain"
-
 <b>Currently Working:</b>
+
+<b>JSON Decoding</b>
+
+- Allows proper json to object mapping for sent and received messages.
 
 <b>Chat bubbles</b>
 - Chat bubbles are animated as they are added to the text area.
@@ -29,16 +32,20 @@ To run the client, use the command "gradlew run -Dexec.mainClass=ChatClient.Clie
 - Messages are sent by JSON which include sender information and message data.
 - Messages have a type attribute which flags how they should be handled by the receiver.
 
+<b>Dependency Injection</b>
+- Weld managed Beans. I find it makes it a lot easier to access server and client thread contexts as well as updating the GUI.
 
 <b>To Come:</b>
-- Integrating the user database and login functions from FancyFX to allow user data persistence.
+- Integrating user database and login functions to allow user data persistence.
 - Static Color pool which server manages to prevent unwanted/duplicate colors.
 - Initial screen which allows selection between running server/client.
 - Design changes.
 
-Uses:
+Dependencies:
 <br>
 com.jfoenix:jfoenix:8.0.72<br>
 org.json:json:201801302<br>
-org.xerial:sqlite-jdbc:3.23.12
+org.xerial:sqlite-jdbc:3.23.12<br>
+com.fasterxml.jackson.core:jacksoncore:2.9.9<br>
+com.fasterxml.jackson.core:jackson-databind:2.9.8
 
