@@ -1,0 +1,22 @@
+TextFlow{
+
+-fx-background-color: #a5d6a7;
+-fx-pref-width: 180px;
+-fx-max-width: 400px;
+-fx-pref-height: 20px;
+-fx-padding: 10 40 10 10;
+-fx-shape: "M 600 250 L 600 250 L 600 200 L 300 200 L 300 300 L 650 300 Z";
+-fx-fill: #a5d6a7;
+-fx-alignment: left;
+-fx-effect: dropshadow( gaussian, rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+
+}
+
+.messageincoming{
+
+-fx-background-color: #80deea;
+-fx-shape: "M 250 300 L 600 300 L 600 200 L 300 200 L 300 250 L 250 300 Z";
+-fx-alignment: left;
+-fx-padding: 10 10 10 40;
+
+}

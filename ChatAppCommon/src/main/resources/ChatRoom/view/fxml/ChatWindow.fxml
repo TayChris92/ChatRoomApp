@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="643.0" style="-fx-background-color: #64c1ff;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="textMessageBar" disable="true" layoutX="116.0" layoutY="330.0" prefHeight="25.0" prefWidth="463.0" />
+      <JFXButton fx:id="buttonSend" buttonType="RAISED" disable="true" layoutX="586.0" layoutY="330.0" style="-fx-background-color: #64c1ff;" text="Send" />
+      <VBox layoutX="113.0" layoutY="25.0" prefHeight="298.0" prefWidth="515.0">
+         <children>
+            <HBox fx:id="adminBanner" alignment="CENTER" prefHeight="21.0" prefWidth="523.0" style="-fx-background-color: #e0e0e0;">
+               <children>
+                  <Label fx:id="adminText" text="Admin Text" />
+               </children>
+            </HBox>
+            <ScrollPane fx:id="chatScroll" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" pannable="true" prefHeight="280.0" prefWidth="545.0" vbarPolicy="NEVER">
+               <content>
+                  <VBox fx:id="chatPane" prefHeight="280.0" prefWidth="545.0" spacing="10.0" style="-fx-background-color: white;">
+                     <padding>
+                        <Insets bottom="40.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+      <JFXDrawer fx:id="drawerUsers" layoutY="44.0" prefHeight="357.0" prefWidth="111.0" />
+      <JFXButton fx:id="buttonShowMenu" buttonType="RAISED" layoutX="546.0" layoutY="360.0" style="-fx-background-color: #64c1ff;" text="Show Menu" />
+      <ListView fx:id="listClients" layoutX="6.0" layoutY="43.0" prefHeight="279.0" prefWidth="97.0" />
+   </children>
+</AnchorPane>
